@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>{{ title }}</title>
 </head>
+
 <body>
-<h1>Hello</h1>
+<h1>Password generator</h1>
+
+<form action="{% url 'password' %}">
+    <select name="lenght">
+        <option value="6">6</option>
+    </select>
+    <input type="submit" value="Generate password">
+
+</form>
+
 </body>
+
 </html>

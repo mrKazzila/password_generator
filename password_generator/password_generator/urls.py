@@ -17,5 +17,6 @@ from django.urls import path
 from generator import views
 
 urlpatterns = [
-    path('', views.HomeView.as_view(),),
+    path('', views.HomeView.as_view()),
+    path('password/', views.PasswordView.as_view(), name='password'),
 ]
