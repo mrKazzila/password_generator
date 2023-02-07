@@ -36,3 +36,8 @@ class PasswordView(TitleMixin, TemplateView):
         context = super().get_context_data(**kwargs)
         context['password'] = self.random_generator()
         return context
+
+
+class AboutView(TitleMixin, TemplateView):
+    template_name = 'generator/about.html'
+    title = 'SPG | About'

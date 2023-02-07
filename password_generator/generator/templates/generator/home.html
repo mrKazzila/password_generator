@@ -7,6 +7,13 @@
 </head>
 
 <body>
+
+<header>
+    <button>
+        <a href="{% url 'about' %}">About</a>
+    </button>
+</header>
+
 <h1>Password generator</h1>
 
 <form action="{% url 'password' %}">
@@ -29,8 +36,7 @@
         <input type="checkbox" name="special"> Special characters
     <br>
 
-
-</form>
+</form
 
 </body>
 
