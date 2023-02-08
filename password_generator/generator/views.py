@@ -1,8 +1,7 @@
-
-
 from django.views.generic.base import TemplateView
-from generator.password_generator import random_generator
+
 from common.views import TitleMixin
+from generator.password_generator import random_generator
 
 
 class HomeView(TitleMixin, TemplateView):
