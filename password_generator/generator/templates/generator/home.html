@@ -1,45 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'generator/base.html' %}
+{% load static %}
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-<head>
-    <meta charset="UTF-8">
-    <title>{{ title }}</title>
-</head>
+{% block content %}
+    <section>
+        <div id="sec_options" class="container text-left">
+            <form action="{% url 'password' %}">
 
-<body>
+                <div class="chboxs">Length
+                        <select id="pgLength" name="length">
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                        <option value="12" selected="selected">12</option>
+                        <option value="20">20</option>
+                    </select>
+                </div>
 
-<header>
-    <button>
-        <a href="{% url 'about' %}">About</a>
-    </button>
-</header>
+                <div class="chboxr">Uppercase
+                    <input type="checkbox" name="uppercase" checked="checked">
+                </div>
 
-<div class="container text-center">
+                <div class="chboxr">Numbers
+                    <input type="checkbox" name="numbers" checked="checked">
+                </div>
 
-    <h1>Password generator</h1>
-    <form action="{% url 'password' %}">
+                <div class="chboxr">Special characters
+                    <input type="checkbox" name="special" checked="checked">
+                </div>
 
-    <select name="length">
-        <option value="6">6</option>
-        <option value="8">8</option>
-        <option value="10">10</option>
-        <option value="12" selected="selected">12</option>
-        <option value="20">20</option>
-    </select> Length
-    <br>
-        <input type="checkbox" name="uppercase" checked="checked"> Uppercase
-    <br>
-        <input type="checkbox" name="numbers"> Numbers
-    <br>
-        <input type="checkbox" name="special"> Special characters
-    <br>
-    <br>
-    <input type="submit" value="Generate password" class="btn btn-primary">
-    </form>
+                <div id="sec_btn">
+                    <div class="GenerateBtn">
+                        <input type="submit" value="Generate password" class="btn btn-primary">
+                    </div>
+                </div>
 
-</div>
-
-</body>
-</html>
+            </form>
+        </div>
+    </section>
+{% endblock %}
