@@ -90,8 +90,10 @@ python manage.py runserver
 8. Open url [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 
----
-
-> [Resume](https://kazzila.github.io/resume/) &nbsp;&middot;&nbsp;
-> GitHub [Kazzila](https://github.com/Kazzila) &nbsp;&middot;&nbsp;
-> LinkedIn [Ilya Kazakov](https://www.linkedin.com/in/i-kazakov/)
+<br>
+<br>
+<p align="center">
+  <a href="https://github.com/Kazzila">GitHub</a> •
+  <a href="https://kazzila.github.io/resume/">Resume</a> •
+  <a href="https://www.linkedin.com/in/i-kazakov/">LinkedIn</a>
+</p>
