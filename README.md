@@ -1,8 +1,8 @@
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify">
-    <img src="readme/key.png"
-    alt="Key" width="200">
+  <a href="https://stepik.org/course/101042/info">
+    <img src="readme/stepik.jpeg"
+    alt="Stepik" width="200">
   </a>
   <br>
   Password generator project 
@@ -12,8 +12,10 @@
 
 
 <h4 align="center">
-    Password generator. Simple django project from 
-    <a href="https://stepik.org/course/101042/info" target="_blank">course</a>.
+    Password generator. Simple django project.<br>
+    <a href="https://stepik.org/course/101042/info" target="_blank">
+      Stepik | Django 3 - Full Stack Python website development
+    </a>
 </h4>
 
 <div align="center">
@@ -26,13 +28,12 @@
 
 <p align="center">
   <a href="#features">Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#related">Related</a>
+  <a href="#tech-stack">Tech stack</a> •
+  <a href="#how-to-use">How To Use</a>
 </p>
 
 
 ## Features
-
 * Generate random password use
   - letter
   - upper case letter
@@ -41,39 +42,52 @@
 * Copy password to clipboard
 
 
+## Tech stack
+[Django 3](https://www.djangoproject.com/download/)
+
+
 ## How To Use
+To clone and run this project, you'll need:
+- [Git](https://git-scm.com)
+- [Python](https://www.python.org/downloads/)
+- [Poetry](https://python-poetry.org/docs/#installation)
 
-To clone and run this project, you'll need
-[Git](https://git-scm.com),
-[Python](https://www.python.org/downloads/) and
-[Poetry](https://python-poetry.org/docs/#installation)
-
-
+1. Clone this repository
 ```bash
-# Clone this repository
-$ git clone git@github.com:Kazzila/password_generator.git
-
-# Go into the repository
-$ cd password_generator
-
-# add settings for Poetry
-$ poetry config virtualenvs.in-project true
-
-# Activate env
-$ poetry shell
-
-# Install dependencies
-$ poetry install
-
-# Go into the working dir
-$ cd password_generator
-
-# Run the app
-$ python manage.py runserver
+git clone git@github.com:Kazzila/password_generator.git
 ```
 
-## Related
-Just local server
+2. Go into the repository
+```bash
+cd password_generator
+```
+
+3. Add settings for Poetry
+```bash
+poetry config virtualenvs.in-project true
+```
+
+4. Activate env
+```bash
+poetry shell
+```
+
+5. Install dependencies
+```bash
+poetry install
+```
+
+6. Go into the working dir
+```bash
+cd password_generator
+```
+
+7. Run the app
+```bash
+python manage.py runserver
+```
+
+8. Open url [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 
 ---
