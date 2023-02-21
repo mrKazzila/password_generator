@@ -1,7 +1,7 @@
 <h1 align="center">
   <br>
   <a href="https://stepik.org/course/101042/info">
-    <img src="readme/stepik.jpeg"
+    <img style="background-color: #1b1116" src="readme/stepik.svg"
     alt="Stepik" width="200">
   </a>
   <br>
@@ -12,9 +12,9 @@
 
 
 <h4 align="center">
-    Password generator. Simple django project.<br>
+    Simple django project<br>
     <a href="https://stepik.org/course/101042/info" target="_blank">
-      Stepik | Django 3 - Full Stack Python website development
+      Django 3 - Full Stack Python website development
     </a>
 </h4>
 
@@ -82,12 +82,17 @@ poetry install
 cd password_generator
 ```
 
-7. Run the app
+7. Apply migrations
+```bash
+python manage.py migrate
+```
+
+8. Run the app
 ```bash
 python manage.py runserver
 ```
 
-8. Open url [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+9. Open url [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 
 <br>
