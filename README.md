@@ -29,7 +29,8 @@
 <p align="center">
   <a href="#features">Features</a> •
   <a href="#tech-stack">Tech stack</a> •
-  <a href="#how-to-use">How To Use</a>
+  <a href="#how-to-use">How To Use</a> •
+  <a href="https://kazzila.pythonanywhere.com/">Website</a>
 </p>
 
 
@@ -43,7 +44,8 @@
 
 
 ## Tech stack
-[Django 3](https://www.djangoproject.com/download/)
+ - [Django 3](https://www.djangoproject.com/download/)
+ - [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 
 ## How To Use
