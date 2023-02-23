@@ -8,7 +8,7 @@ packages = [{include = "password_generator"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-django = "3.2.6"
+django = "3.2.18"
 
 
 [tool.poetry.group.dev.dependencies]
