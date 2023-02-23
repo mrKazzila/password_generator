@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "password-generator"
-version = "0.1.0"
+version = "1.0.0"
 description = "Course project. Password generator by django"
 authors = ["kazila <mrkazzila@gmail.com>"]
 readme = "README.md"
 packages = [{include = "password_generator"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 django = "3.2.18"
 
 
