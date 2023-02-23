@@ -1,41 +1,56 @@
 {% extends 'generator/base.html' %}
 {% load static %}
 
-
 {% block content %}
     <section>
         <div id="sec_options" class="container text-left">
-            <form action="{% url 'password' %}">
+            <form method="POST">
+                {% csrf_token %}
 
-                <div class="chboxs">Length
-                        <select id="pgLength" name="length">
+                <div>Length
+                    <select id="browser-default custom-select mb-4" name="length">
                         <option value="6">6</option>
                         <option value="8">8</option>
                         <option value="10">10</option>
-                        <option value="12" selected="selected">12</option>
+                        <option value="12">12</option>
                         <option value="20">20</option>
                     </select>
                 </div>
 
-                <div class="chboxr">Uppercase
-                    <input type="checkbox" name="uppercase" checked="checked">
+                <div class="form-check form-switch">
+                   <label class="form-check-label" for="flexSwitchCheckChecked">Uppercase</label>
+                  <input name="uppercase" class="form-check-input"
+                         type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+
                 </div>
 
-                <div class="chboxr">Numbers
-                    <input type="checkbox" name="numbers" checked="checked">
+                <div class="form-check form-switch">
+                  <input name="numbers" class="form-check-input"
+                         type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                  <label class="form-check-label" for="flexSwitchCheckChecked">Numbers</label>
                 </div>
 
-                <div class="chboxr">Special characters
-                    <input type="checkbox" name="special" checked="checked">
+                <div class="form-check form-switch">
+                  <input name="special" class="form-check-input"
+                         type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                  <label class="form-check-label" for="flexSwitchCheckChecked">Special</label>
                 </div>
 
-                <div id="sec_btn">
-                    <div class="GenerateBtn">
-                        <input type="submit" value="Generate password" class="btn btn-primary">
-                    </div>
-                </div>
+                {% if password %}
+                    <h2>Your password:</h2>
+                    <h3 id="text-to-copy">{{ password }}</h3>
+                    <button id="copy-button">Copy to Clipboard</button>
+                {% endif %}
+
+                <button class="GenerateBtn" name="submit" value="Submit" type="submit">
+                    Generate password
+                </button>
+
 
             </form>
+
+
+
         </div>
     </section>
 {% endblock %}
