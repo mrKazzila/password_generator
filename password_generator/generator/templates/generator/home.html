@@ -2,55 +2,68 @@
 {% load static %}
 
 {% block content %}
-    <section>
-        <div id="sec_options" class="container text-left">
-            <form method="POST">
-                {% csrf_token %}
+    <div class="container-sm">
+        <section class="d-flex justify-content-center align-items-center container ">
+            <div class="card">
+                <h1 class="title">Password Generator</h1>
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="row justify-content-around">
+                        <div class="row justify-content-center">
+                            <div>Length
+                                <select id="browser-default custom-select mb-4" name="length">
+                                    <option value="6">6</option>
+                                    <option value="8">8</option>
+                                    <option value="10">10</option>
+                                    <option value="12">12</option>
+                                    <option value="20">20</option>
+                                </select>
+                            </div>
 
-                <div>Length
-                    <select id="browser-default custom-select mb-4" name="length">
-                        <option value="6">6</option>
-                        <option value="8">8</option>
-                        <option value="10">10</option>
-                        <option value="12">12</option>
-                        <option value="20">20</option>
-                    </select>
-                </div>
+                            <div class="form-check form-switch">
+                               <label class="form-check-label" for="flexSwitchCheckChecked">Uppercase</label>
+                              <input name="uppercase" class="form-check-input"
+                                     type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
 
-                <div class="form-check form-switch">
-                   <label class="form-check-label" for="flexSwitchCheckChecked">Uppercase</label>
-                  <input name="uppercase" class="form-check-input"
-                         type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                            </div>
 
-                </div>
+                            <div class="form-check form-switch">
+                              <input name="numbers" class="form-check-input"
+                                     type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                              <label class="form-check-label" for="flexSwitchCheckChecked">Numbers</label>
+                            </div>
 
-                <div class="form-check form-switch">
-                  <input name="numbers" class="form-check-input"
-                         type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-                  <label class="form-check-label" for="flexSwitchCheckChecked">Numbers</label>
-                </div>
+                            <div class="form-check form-switch">
+                              <input name="special" class="form-check-input"
+                                     type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                              <label class="form-check-label" for="flexSwitchCheckChecked">Special</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
 
-                <div class="form-check form-switch">
-                  <input name="special" class="form-check-input"
-                         type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-                  <label class="form-check-label" for="flexSwitchCheckChecked">Special</label>
-                </div>
-
-                {% if password %}
-                    <h2>Your password:</h2>
-                    <h3 id="text-to-copy">{{ password }}</h3>
-                    <button id="copy-button">Copy to Clipboard</button>
-                {% endif %}
-
-                <button class="GenerateBtn" name="submit" value="Submit" type="submit">
-                    Generate password
-                </button>
+                    {% if password %}
+                        <h4 class="title">Your password</h4>
+                        <div id="password-area">
+                            <h5 id="text-to-copy">{{ password }}</h5>
+                        </div>
+                    {% endif %}
 
 
-            </form>
+                    <div class="main-btn">
+                        <button id="generate-button" class="btn btn-secondary col-sm-auto col-xs-12"
+                                name="submit" value="Submit" type="submit" data-trigger="manual" title="Copied!">
+                            Generate password
+                        </button>
+                        {% if password %}
+                            <button id="copy-button" type="button" class="btn btn btn-secondary col-sm-auto col-xs-9">
+                                Copy to Clipboard
+                            </button>
+                        {% endif %}
+                    </div>
 
-
-
-        </div>
+                </form>
+            </div>
     </section>
+</div>>
 {% endblock %}
