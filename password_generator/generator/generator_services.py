@@ -1,4 +1,6 @@
 import random
+import string
+
 from django.shortcuts import render
 
 
@@ -36,13 +38,13 @@ def _random_generator(request_data: dict) -> str:
 def _get_characters(data: dict) -> list:
     """ Create characters list. """
 
-    base_characters = list('abcdefghijklmnopqrstuvwxyz')
+    base_characters = list(string.ascii_lowercase)
 
     if data.get('uppercase'):
-        base_characters.extend(list('ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
+        base_characters.extend(string.ascii_uppercase)
     if data.get('numbers'):
-        base_characters.extend(list('1234567890'))
+        base_characters.extend(string.digits)
     if data.get('special'):
-        base_characters.extend(list('!@#$%^&*()-_=+'))
+        base_characters.extend(string.punctuation)
 
     return base_characters
