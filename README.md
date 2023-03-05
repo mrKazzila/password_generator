@@ -1,5 +1,4 @@
 <h1 align="center">
-  <br>
   <a href="https://stepik.org/course/101042/info">
     <img style="background-color: #1b1116" src="readme/stepik.svg"
     alt="Stepik" width="200">
@@ -54,48 +53,53 @@ To clone and run this project, you'll need:
 - [Python](https://www.python.org/downloads/)
 - [Poetry](https://python-poetry.org/docs/#installation)
 
+
+<details>
+<summary>Step-by-step commands</summary>
+
 1. Clone this repository
-```bash
-git clone git@github.com:Kazzila/password_generator.git
-```
+  ```bash
+  git clone git@github.com:Kazzila/password_generator.git
+  ```
 
 2. Go into the repository
-```bash
-cd password_generator
-```
+  ```bash
+  cd password_generator
+  ```
 
 3. Add settings for Poetry
-```bash
-poetry config virtualenvs.in-project true
-```
+  ```bash
+  poetry config virtualenvs.in-project true
+  ```
 
 4. Activate env
-```bash
-poetry shell
-```
+  ```bash
+  poetry shell
+  ```
 
 5. Install dependencies
-```bash
-poetry install
-```
+  ```bash
+  poetry install --no-dev
+  ```
 
 6. Go into the working dir
-```bash
-cd password_generator
-```
+  ```bash
+  cd password_generator
+  ```
 
 7. Apply migrations
-```bash
-python manage.py migrate
-```
+  ```bash
+  python manage.py migrate
+  ```
 
 8. Run the app
-```bash
-python manage.py runserver
-```
+  ```bash
+  python manage.py runserver
+  ```
 
 9. Open url [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
+</details>
 
 <br>
 <br>
