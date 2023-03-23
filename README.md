@@ -99,6 +99,11 @@ To clone and run this project, you'll need:
 
 9. Open url [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
+10. Generate requirements.txt from poetry
+  ```bash
+  poetry export --without-hashes --format=requirements.txt > requirements.txt
+  ```
+
 </details>
 
 <br>
