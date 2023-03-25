@@ -1,5 +1,9 @@
 .git/
 .venv/
+.idea/
+.env
+.gitignore
+
 README.md
 readme
 .flake8
