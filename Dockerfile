@@ -16,10 +16,8 @@ RUN apt-get update \
     # install poetry
     && curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python \
     && export PATH="/root/.local/bin:$PATH" \
-    && echo poetry --version \
     && poetry export --without-hashes --format=requirements.txt > requirements.txt \
     && rm -rf var/cache
-
 
 
 FROM poetry as venv
