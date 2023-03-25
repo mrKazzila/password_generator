@@ -1,0 +1,7 @@
+.git/
+.venv/
+README.md
+readme
+.flake8
+docker-compose.yaml
+Dockerfile
