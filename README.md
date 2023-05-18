@@ -59,7 +59,7 @@ To clone and run this project, you'll need:
 
 1. Clone this repository
   ```bash
-  git clone git@github.com:Kazzila/password_generator.git
+  git clone git@github.com:mrKazzila/password_generator.git
   ```
 
 2. Go into the repository
