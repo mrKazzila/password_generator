@@ -4,7 +4,7 @@
     alt="Stepik" width="200">
   </a>
   <br>
-  Password generator project 
+  Password generator project
   <br>
 </h1>
 
@@ -59,12 +59,12 @@ To clone and run this project, you'll need:
 
 1. Clone this repository
   ```bash
-  git clone git@github.com:mrKazzila/password_generator.git
+  git clone git@github.com:mrKazzila/config.git
   ```
 
 2. Go into the repository
   ```bash
-  cd password_generator
+  cd config
   ```
 
 3. Add settings for Poetry
@@ -84,7 +84,7 @@ To clone and run this project, you'll need:
 
 6. Go into the working dir
   ```bash
-  cd password_generator
+  cd config
   ```
 
 7. Apply migrations
