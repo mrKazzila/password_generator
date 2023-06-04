@@ -26,8 +26,5 @@ jobs:
       - name: Poetry install (only dev dependencies)
         run: poetry install --only dev
 
-      - name: Poetry update
-        run: poetry update
-
       - name: Run pre-commit
         run: poetry pre-commit run --all-files
