@@ -1,0 +1,33 @@
+name: Basic code style & security checks
+
+on:
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: [ ubuntu-latest ]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.10
+
+      - name: Update pip and Install poetry
+        run:  |
+          python -m pip install --upgrade pip
+          pip install poetry
+
+      - name: Poetry install
+        run: poetry install --dev
+
+      - name: Poetry update
+        run: poetry update
+
+      - name: Run pre-commit
+        run: pre-commit run --all-files
