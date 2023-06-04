@@ -19,6 +19,7 @@ repos:
             '--in-place',
             '--recursive',
             '--verbose',
+            'app/',
           ]
           language_version: python3.10
 
