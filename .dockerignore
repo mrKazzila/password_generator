@@ -1,11 +1,26 @@
+# Git
 .git/
-.venv/
-.idea/
-.env
 .gitignore
 
-README.md
-readme
-.flake8
+# Docker
 docker-compose.yaml
 Dockerfile
+
+# Env & Venv
+.venv/
+.env/.env.example
+
+# IDE
+.idea/
+.DS_Store
+
+# Cache
+*.pytest_cache
+**/__pycache__/
+
+# Linters & Formatters
+style/
+
+# Project
+README.md
+readme
