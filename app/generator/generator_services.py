@@ -16,28 +16,27 @@ def generate_password(request, template, render_data):
 
 
 def _create_password(request, render_data, template):
-    """ Create password. """
+    """Create password."""
     password = _random_generator(request_data=request.POST)
     render_data.update({'password': password})
     return render(request, template, render_data)
 
 
 def _random_generator(request_data: dict) -> str:
-    """ Generate random password. """
+    """Generate random password."""
     data = request_data
     length = int(data.get('length'))
     characters = _get_characters(data=data)
-    password = ''
+    password = []
 
     for _ in range(length):
-        password += random.choice(characters)
+        password.append(random.choice(characters))  # nosec
 
-    return password
+    return ''.join(password)
 
 
 def _get_characters(data: dict) -> list:
-    """ Create characters list. """
-
+    """Create characters list."""
     base_characters = list(string.ascii_lowercase)
 
     if data.get('uppercase'):
