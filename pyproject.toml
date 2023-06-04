@@ -4,7 +4,6 @@ version = "2.0.0"
 description = "Stepik course. Simple password generator website using django3"
 authors = ["mrKazzila <mrkazzila@gmail.com>"]
 readme = "README.md"
-packages = [{include = "password_generator"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
