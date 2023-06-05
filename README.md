@@ -22,8 +22,8 @@
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 <br>
-[![Basic code style & security checks](https://github.com/mrKazzila/password_generator/actions/workflows/basic_code_style_and_security_checks.yaml/badge.svg?branch=main)](https://github.com/mrKazzila/password_generator/actions/workflows/basic_code_style_and_security_checks.yaml)
-[![Conventional Commits](https://img.shields.io/badge/stepik-course-green)](https://stepik.org/course/101042/info)
+[![Basic code style & security checks](https://github.com/mrKazzila/password_generator/actions/workflows/basic_code_style_and_security_checks.yaml/badge.svg?)](https://github.com/mrKazzila/password_generator/actions/workflows/basic_code_style_and_security_checks.yaml)
+[![Stepik course](https://img.shields.io/badge/stepik-course-green)](https://stepik.org/course/101042/info)
 
 </div>
 <hr>
