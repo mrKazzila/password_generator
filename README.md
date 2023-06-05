@@ -83,23 +83,27 @@ To clone and run this project, you'll need:
     ```bash
     poetry install --no-dev
     ```
+6. Create env file
+    ```bash
+    cp env/.env.example env/.env
+    ```
 
-6. Go into the working dir
+7. Go into the working dir
     ```bash
     cd app
     ```
 
-7. Apply migrations
+8. Apply migrations
     ```bash
     python manage.py migrate
     ```
 
-8. Run the app
+9. Run the app
     ```bash
     python manage.py runserver
     ```
 
-9. Open url [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+10. Open url [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 </details>
 
