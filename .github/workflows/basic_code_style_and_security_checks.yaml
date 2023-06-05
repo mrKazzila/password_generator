@@ -26,5 +26,8 @@ jobs:
       - name: Poetry install (only dev dependencies)
         run: poetry install --only dev
 
-      - name: Run pre-commit
-        run: poetry pre-commit run --all-files
+      - name: Run flake8
+        run: poetry run flake8 --config=style/.flake8 app
+
+      - name: Run bandit
+        run: poetry run bandit -r -c style/bandit.yaml app
